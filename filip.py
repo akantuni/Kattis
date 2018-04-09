@@ -1,5 +1,11 @@
 x = input()
-number = x.split()[0:2]
-number2 = x.split()[3:-1]
+basenumber = x.split()[0]
+basenumber2 = x.split()[1]
 
-print(number2)
+number = basenumber[::-1]
+number2 = basenumber2[::-1]
+
+if number > number2:
+    print(number)
+else:
+    print(number2)
