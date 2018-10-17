@@ -6,15 +6,15 @@ nG = 0
 
 xf = list(x)
 
-for i in (xf):
+for i in xf:
     if i == "T":
         nT += 1
 
-for i in (xf):
+for i in xf:
     if i == "G":
         nG += 1
 
-for i in (xf):
+for i in xf:
     if i == "C":
         nC += 1
 
