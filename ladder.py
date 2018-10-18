@@ -9,6 +9,3 @@ radians = 0.0174533 * v
 x = math.sin(radians)
 
 print(math.ceil(h / x))
-
-
-
