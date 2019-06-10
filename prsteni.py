@@ -8,4 +8,3 @@ for ring in rest:
     numerator = first // gcd(first, ring)
     denominator = ring // gcd(first, ring)
     print("{}/{}".format(numerator, denominator))
- 
