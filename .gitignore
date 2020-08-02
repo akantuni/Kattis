@@ -3,4 +3,7 @@
 
 # IDE
 .idea
+.vscode
+venv
+__pycache__
 
