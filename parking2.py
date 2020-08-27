@@ -1,12 +1,7 @@
 n = int(input())
 
 for i in range(n):
-    numstores = int(input())
-    coordinates = list(map(int, input().split()))
-    coordinates.sort()
-    sum = 0
-    for i in coordinates:
-        while coordinates.index(i) + 1 < numstores:
-            sum += 2 * abs((i - coordinates[coordinates.index(i) + 1]))
-            break
-    print(sum)
+    stores = int(input())
+    positions = list(map(int, input().split()))
+    positions.sort()
+    print(int(((positions[stores - 1] - positions[0]) / 2 * 4)))
