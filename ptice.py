@@ -1,41 +1,28 @@
-questions = int(input())
+n = int(input())
 answers = input()
-sequences = {
-    "Adrian": "ABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCA",
-    "Bruno": "BABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABCBABC",
-    "Goran": "CCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAABBCCAA"
-}
 
+adrian = ["A", "B", "C"]
+bruno = ["B", "A", "B", "C"]
+gordan = ["C", "C", "A", "A", "B", "B"]
 
-def check(name):
-    counter = -1
-    correct = 0
-    for letter in answers:
-        counter += 1
-        if sequences.get(name)[counter] == letter:
-            correct += 1
-    return correct, name
+correct_a = 0
+correct_b = 0
+correct_g = 0
+for i, char in enumerate(answers):
+    if adrian[i % 3] == char:
+        correct_a += 1
+    if bruno[i % 4] == char:
+        correct_b += 1
+    if gordan[i % 6] == char:
+        correct_g += 1
 
+m = max(correct_a, correct_b, correct_g)
 
-correctadrian = check("Adrian")
-correctbruno = check("Bruno")
-correctgoran = check("Goran")
+print(m)
 
-order = [correctadrian, correctbruno, correctgoran]
-leader = -1
-leadername = ""
-for i in order:
-    if int(i[0]) > leader:
-        leader = int(i[0])
-        leadername = i[1]
-
-if int(correctadrian[0]) == int(correctbruno[0]) and int(correctadrian[0]) == int(correctgoran[0]):
-    print(str(int(correctadrian[0])) + "\n" + "Adrian" + "\n" + "Bruno" + "\n" + "Goran")
-elif int(correctadrian[0]) == int(correctbruno[0]):
-    print(str(int(correctadrian[0])) + "\n" + "Adrian" + "\n" + "Bruno")
-elif int(correctadrian[0]) == int(correctgoran[0]):
-    print(str(int(correctadrian[0])) + "\n" + "Adrian" + "\n" + "Goran")
-elif int(correctbruno[0]) == int(correctgoran[0]):
-    print(str(int(correctbruno[0])) + "\n" + "Bruno" + "\n" + "Goran")
-else:
-    print(str(leader) + "\n" + str(leadername))
+if correct_a == m:
+    print("Adrian")
+if correct_b == m:
+    print("Bruno")
+if correct_g == m:
+    print("Gordan")
