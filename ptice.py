@@ -1,28 +1,28 @@
 n = int(input())
 answers = input()
 
-adrian = ["A", "B", "C"]
-bruno = ["B", "A", "B", "C"]
-gordan = ["C", "C", "A", "A", "B", "B"]
+adrian = "ABC"
+bruno = "BABC"
+goran = "CCAABB"
 
-correct_a = 0
-correct_b = 0
-correct_g = 0
-for i, char in enumerate(answers):
-    if adrian[i % 3] == char:
-        correct_a += 1
-    if bruno[i % 4] == char:
-        correct_b += 1
-    if gordan[i % 6] == char:
-        correct_g += 1
+memo = {
+    "Adrian": 0,
+    "Bruno": 0,
+    "Goran": 0
+}
 
-m = max(correct_a, correct_b, correct_g)
+for i in range(n):
+    if answers[i] == adrian[i % len(adrian)]:
+        memo["Adrian"] += 1
+    if answers[i] == bruno[i % len(bruno)]:
+        memo["Bruno"] += 1
+    if answers[i] == goran[i % len(goran)]:
+        memo["Goran"] += 1
+
+m = max(memo.values())
 
 print(m)
 
-if correct_a == m:
-    print("Adrian")
-if correct_b == m:
-    print("Bruno")
-if correct_g == m:
-    print("Gordan")
+for name, score in memo.items():
+    if score == m:
+        print(name)
