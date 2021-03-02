@@ -13,4 +13,4 @@ sl = sec / 60 / min
 if sl > 1:
     print(sl)
 else:
-    print('measurement error')
+    print("measurement error")

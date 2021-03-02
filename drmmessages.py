@@ -3,8 +3,8 @@ import string
 alphabet = string.ascii_uppercase
 
 encrypted = input()
-half1 = encrypted[:int(len(encrypted) / 2)]
-half2 = encrypted[int(len(encrypted) / 2):]
+half1 = encrypted[: int(len(encrypted) / 2)]
+half2 = encrypted[int(len(encrypted) / 2) :]
 
 half1_final = ""
 half2_final = ""

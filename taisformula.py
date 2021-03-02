@@ -8,7 +8,11 @@ for i in range(n):
 x = 0
 areas = []
 for i in range(len(coordinates) - 1):
-    area = ((coordinates[x][1] + coordinates[x + 1][1]) / 2) * (coordinates[x + 1][0] - coordinates[x][0]) / 1000
+    area = (
+        ((coordinates[x][1] + coordinates[x + 1][1]) / 2)
+        * (coordinates[x + 1][0] - coordinates[x][0])
+        / 1000
+    )
     areas.append(area)
     x += 1
 

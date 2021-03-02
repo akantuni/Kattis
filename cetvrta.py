@@ -13,6 +13,7 @@ y.append(a[1])
 y.append(b[1])
 y.append(c[1])
 
+
 def remove(n):
     semi = []
     dup = []
@@ -27,4 +28,3 @@ def remove(n):
 
 
 print(remove(x), remove(y))
-

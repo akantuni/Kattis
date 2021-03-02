@@ -12,14 +12,14 @@ def digits(z):
 
 
 n = l
-for n in range(l, d+1):
+for n in range(l, d + 1):
     if digits(n) == x:
         break
 
 m = d
-for m in range(d, l-1, -1):
+for m in range(d, l - 1, -1):
     if digits(m) == x:
         break
 
 print(n)
-print(m)                   
+print(m)

@@ -5,6 +5,6 @@ for e in range(int(n)):
     if line.startswith("simon says"):
         arraystr = line.split(" ")[2:]
         for word in arraystr:
-            str += (word + " ")
+            str += word + " "
     if len(str) > 0:
-        print(str[:-1] + '\n')
+        print(str[:-1] + "\n")

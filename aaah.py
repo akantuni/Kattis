@@ -5,7 +5,7 @@ x = len(line1)
 y = len(line2)
 
 if x >= y:
-  print("go")
-  
+    print("go")
+
 else:
-  print("no")
+    print("no")

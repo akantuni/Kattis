@@ -6,10 +6,9 @@ try:
     elif y == 0 and x != 0:
         print("IMPOSSIBLE")
     else:
-        print((x/(1-y)))
+        print((x / (1 - y)))
 except ZeroDivisionError:
     if x == 0:
         print("ALL GOOD")
     else:
         print("IMPOSSIBLE")
-

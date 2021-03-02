@@ -12,4 +12,4 @@ if m < 0:
 if h < 0:
     h += 24
 
-print(h,m)
+print(h, m)

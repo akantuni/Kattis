@@ -1,5 +1,6 @@
 distance = 0
 
+
 def miles(w):
     time = 0
     dist = 0
@@ -20,13 +21,12 @@ def miles(w):
 
     return dist
 
+
 while True:
-    z  = input()
+    z = input()
     if z == "-1":
         break
     elif len(z.split()) == 1:
         n = int(z)
         distance = miles(n)
-        print(distance, 'miles')
-
-
+        print(distance, "miles")

@@ -8,6 +8,7 @@ def convert_to_base(num, base):
 
     return memo
 
+
 n = int(input())
 
 for i in range(n):

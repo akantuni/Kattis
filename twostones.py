@@ -1,6 +1,6 @@
 n = int(input())
 
 if n % 2 == 1:
-  print("Alice")
+    print("Alice")
 else:
-  print("Bob")
+    print("Bob")

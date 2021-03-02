@@ -17,4 +17,3 @@ for i, letter in enumerate(key):
     final += new_letter
 
 print(final)
-

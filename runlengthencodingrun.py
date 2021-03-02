@@ -3,6 +3,7 @@ type = s.split()[0]
 text = s.split()[1]
 num = "123456789"
 
+
 def encode(text):
     mystr = ""
     total = 0

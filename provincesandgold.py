@@ -6,7 +6,11 @@ victory = {"Province": 8, "Duchy": 5, "Estate": 2}
 costtreasure = {"Gold": 6, "Silver": 3, "Copper": 0}
 bptreasure = {"Gold": 3, "Silver": 2, "Copper": 1}
 
-total = gold * bptreasure["Gold"] + silver * bptreasure["Silver"] + copper * bptreasure["Copper"]
+total = (
+    gold * bptreasure["Gold"]
+    + silver * bptreasure["Silver"]
+    + copper * bptreasure["Copper"]
+)
 
 if total < 2:
     print("Copper")
@@ -22,5 +26,3 @@ elif total < 5:
         print("Estate or Silver")
     else:
         print("Estate or Copper")
-
-

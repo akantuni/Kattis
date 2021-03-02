@@ -7,4 +7,3 @@ taxicab_area = (radius * sqrt(2)) ** 2
 
 print(euclidian_area)
 print(taxicab_area)
-

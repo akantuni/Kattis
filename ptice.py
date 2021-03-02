@@ -5,11 +5,7 @@ adrian = "ABC"
 bruno = "BABC"
 goran = "CCAABB"
 
-memo = {
-    "Adrian": 0,
-    "Bruno": 0,
-    "Goran": 0
-}
+memo = {"Adrian": 0, "Bruno": 0, "Goran": 0}
 
 for i in range(n):
     if answers[i] == adrian[i % len(adrian)]:

@@ -16,23 +16,22 @@ ga = a3 + a4
 gb = b3 + b4
 
 if ga > eb:
-  print("Gunnar")
+    print("Gunnar")
 elif ea > gb:
-  print("Emma")
+    print("Emma")
 else:
-  l = ea - ga
-  r = gb - eb
+    l = ea - ga
+    r = gb - eb
 
-  if r == l:
-    print("Tie")
-  elif (r >= 0 and r > l) or (r < 0 and r < l):
-      if max(gb, eb) == eb:
-        print("Gunnar")
-      else:
-        print("Emma")
-  else:
-    if max(gb, eb) == gb:
-      print("Gunnar")
+    if r == l:
+        print("Tie")
+    elif (r >= 0 and r > l) or (r < 0 and r < l):
+        if max(gb, eb) == eb:
+            print("Gunnar")
+        else:
+            print("Emma")
     else:
-      print("Emma")
-
+        if max(gb, eb) == gb:
+            print("Gunnar")
+        else:
+            print("Emma")

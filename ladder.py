@@ -1,4 +1,5 @@
 import math
+
 n = input()
 
 h = int(n.split()[0])

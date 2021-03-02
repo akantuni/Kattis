@@ -1,5 +1,3 @@
-
-
 while True:
     line = input().upper()
     guide = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_."
