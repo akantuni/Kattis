@@ -13,4 +13,3 @@ for i in range(1, len(locs)):
         speed = current
 
 print(int(speed))
-
