@@ -16,5 +16,5 @@ for i in range(t):
 
     totals.sort(key=lambda x: x[1])
     totals.sort(key=lambda x: x[0], reverse=True)
-    print('\n'.join(item[1] for item in totals))
+    print("\n".join(item[1] for item in totals))
     print("=" * 30)
